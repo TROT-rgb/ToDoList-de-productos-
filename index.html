@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <title>ToDoList</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="maindiv">                                                     
+        <form id="formtodolist">                                                      
+            <h1>Lista de Productos</h1>
+            <hr></hr>
+            <div id="divform">
+                <div class="divtextoform">
+                    <input required name="textoform" class="inputtextoform" maxlength="22" placeholder="Anota un Producto">
+                </div>
+            </div>
+            <div id="divform">
+                <div id="divselectform">
+                    <select name="cantidad-form" class="cantidad-form">
+                        <option disabled hidden selected value="null">Cantidad...</option>
+                        <option>Máxima</option>
+                        <option>Mínima</option>
+                        <option>No hay</option>
+                    </select>
+                </div>
+            </div>
+            <button class="boton-agregar">Agregar</button>
+        </form>
+        <div class="divtabla">
+            <ul>
+            </ul>
+        </div>
+        <script src="JavaScript1.js"></script>
+    </main>
+</body>
+</html>
